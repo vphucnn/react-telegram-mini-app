@@ -89,11 +89,15 @@ export const InitDataPage: FC = () => {
     );
   }
   return (
+    <>
+    <h1>hello</h1>
+    <p>{initData? initData.toString(): 'ooooooo'}</p>
     <List>
       <DisplayData header={'Init Data'} rows={initDataRows}/>
       {userRows && <DisplayData header={'User'} rows={userRows}/>}
       {receiverRows && <DisplayData header={'Receiver'} rows={receiverRows}/>}
       {chatRows && <DisplayData header={'Chat'} rows={chatRows}/>}
     </List>
+    </>
   );
 };
